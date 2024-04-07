@@ -27,9 +27,7 @@ class CheckOutPage(BasePage):
 
     def clickApplyBtn(self):
         self.driver.find_element(*CheckOutPage.applyBtn).click()
-        #return self.verifyLinkPresence().until(expected_conditions.presence_of_element_located((By.CLASS_NAME, "promoInfo")))
         return self.verifyLinkPresence().until(expected_conditions.presence_of_element_located(self.codeApplied))
-        #return self.driver.find_element(*CheckOutPage.applyBtn).click()
 
     def getSuccessNotice(self):
         return self.driver.find_element(*CheckOutPage.codeApplied).text

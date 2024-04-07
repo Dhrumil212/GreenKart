@@ -1,7 +1,6 @@
 from selenium.webdriver.common.by import By
 
 from pageObjects.CheckOutPage import CheckOutPage
-from utilities.BaseClass import BaseClass
 
 
 class HomePage:

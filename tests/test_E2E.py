@@ -46,8 +46,6 @@ class TestOne(BaseClass):
         checkOutPage.enterPromoCode(getData["promo-code"])
         checkOutPage.clickApplyBtn()
 
-        #self.verifyLinkPresence(getData["link-verify"])
-        #self.verifyLinkPresence().until(expected_conditions.presence_of_element_located((By.CLASS_NAME, "promoInfo")))
         print(checkOutPage.getSuccessNotice())
 
         discountAmount = float(checkOutPage.getDiscountAmount())
